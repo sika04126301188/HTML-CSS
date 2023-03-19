@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>qwert21.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon21" src="fotos/fm_123.jpg">
+            <h1 class="titelo">_ New Selectors  : </h1> 
+            <p class="parami">
+           
+                
+                As we saw earlier, HTML elements have to be referenced from Javascript to be affected by the code. If you remember from
+                previous chapters, CSS, and especially CSS3, offers a powerful referencing and selection system that is unmatched by the few
+                methods provided by Javascript for this purpose. The getElementById, getElementsByTagName, and getElementsByClassName methods are not
+                sufficient to contribute to the integration that this language needs and sustain the relevance that it has within the specification
+                of HTML5. To raise Javascript to the level that the circumstances require, new alternatives had to be incorporated. from now
+                we can select HTML elements by applying all kinds of CSS selectors via the new methods querySelector() and
+                 querySelectorAll(). <br> <br> 
+                          
+
+ <span class="tito">- querySelector() : </span>  <br>
+
+ This method returns the first element that matches the group of selectors specified in parentheses. Selectors are declared
+  using quotes and the same CSS syntax, as in the following example:<br><br>
+   function click()<br>
+   { document.querySelector(“#principal p:first-child”).onclick=showalert; } <br>
+   function showalert(){ alert('clicked!'); }<br>
+    window.onload=click; <br><br>
+    Listing 4-4. Using querySelector().<br><br>
+    In Listing 4-4, the getElementsByTagName method used earlier has been replaced with querySelector(). The selectors for this
+    particular query are referencing the first p element that is a child of the element identified with the id attribute and the value
+        main. Since we already explained that this method only returns the first element found, you'll probably notice that the pseudo
+ class first-child is redundant. The querySelector() method in our example will return the first p element inside the div which is,
+  of course, his first child. The purpose of this example is to show you that querySelector() accepts all kinds of selectors.
+  valid CSS and now, just like CSS, Javascript also provides important tools to reference each element
+   in the document. Multiple groups of selectors can be declared separated by commas. The querySelector() method will return the
+   first element that matches any of them.<br><br>
+
+   <strong>Do it yourself :</strong> <br>Replace the code in the mycocode.js file with the one provided in Listing 4-4 ​​and open the HTML file with
+   the code in Listing 4-3 in your browser to see the querySelector() method in action.<br><br>
+       
+ <span class="tito">- querySelectorAll()   : </span>  <br>
+  
+ Instead of one, the querySelectorAll() method returns all elements that match the group of selectors declared between
+ parenthesis. The value returned is an array containing each element found in the order in which they appear in the document.<br><br>
+
+  function click(){ var list=document.querySelectorAll(“#main p”); <br>
+    list[0].onclick=showalert; } function showalert(){ alert('clicked!'); } <br>
+    window.onload=click; Listing 4-5. <br><br>
+    
+    Using querySelectorAll(). The group of selectors specified in the querySelectorAll() method in Listing 4-5
+    will find each p element in the HTML document in Listing 4-3 that is a child of the div element. After the execution of this first line,
+     the array list will have two values: a reference to the first element p and a reference to the second element p. Because the index
+          of each array starts with 0, on the next line the first element found is referenced using square brackets and the value 0
+           (list[0]). Note that this example does not show the potential of querySelectorAll(). It will normally be used to affect
+            several elements and not just one, as in this
+case. To interact with a list of elements returned by this method, we can use a loop<br><br>
+
+for: function click(){ var list=document.querySelectorAll(“#main p”);<br>
+    for(var f=0; f list.length; f++){ list[f].onclick=showalert; } }<br>
+     function showalert(){ alert('clicked!'); } window.onload=click;<br>
+      Listing 4-6. Affecting all elements found by querySelectorAll().<br><br>
+      
+      In Listing 4-6, instead of selecting just the first element found, we register the onclick event handler to
+      each of them using a for loop. Now all the p elements inside the div will display a small window when the
+          user clicks on them. The querySelectorAll() method, like querySelector(), can contain one or more groups
+           of selectors separated by commas. These and the other methods studied can be combined to reference elements
+           which are difficult to reach. For example, in the next listing, the same result of the code in Listing 4-6 is
+           achieved by using querySelectorAll() and getElementById() together:<br><br>
+            
+           function click(){ var list=document.getElementById('main').<br>
+           querySelectorAll("p"); <br>
+           list[0].onclick=showalert; }<br>
+            function showalert(){ alert('clicked!'); } <br>
+            window.onload=click; Listing 4-7. Combining methods.<br><br>
+            
+            Using this technique we can
+               see how accurate these methods can be. We can combine them on the same line and then perform a
+                second selection with another method to reach elements within the first ones. in next chapters
+                we will study some more examples.<br>
+
+
+
+
+
+          
+                           
+            </p>
+        </div>
+        
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="q22"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

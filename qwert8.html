@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>qwert8.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon8" src="fotos/fm_110.jpg">
+            <h1 class="titelo">_   The header : </h1> 
+            <p class="parami">
+
+
+               
+
+                Let's continue with the rest of the structural elements. Following the opening tag of the parent div is
+                    the first structural element of HTML5: header. This element contains the main title of our web page and
+                         It will be located at the top of the screen. In our template, header was identified with the attribute
+                              id and header value. As we already mentioned, each block element, as well as the body, by default has a value
+                              100% width. This means that the element will take up all available horizontal space. In the case of
+                               body, that space is the full width of the visible screen (the browser window), but in the rest of
+                               elements the maximum space available will be determined by the width of its parent element. In our
+                                example, the maximum space available for the elements inside the main box will be 960 pixels,
+                                because its parent is the parent box which was previously set to this size. <br><br>
+                                 #header{ background: #FFFBB9; border: 1px solid #999999; padding: 20px; } <br>
+                                  Listing 2-31. Adding styles for header. <br><br>
+                                 
+                                  Because header will take up all the available horizontal space in the main box and will be treated as a block element.
+                                  (and therefore positioned at the top of the page), the only thing left to do is assign styles that
+                                   will allow the element to be recognized when it is presented on the screen. In the rule shown in Listing 2-31 you
+                                    we give header a yellow background, a 1 pixel solid border and a 20 pixel inner margin using l
+                                        to padding property. <br><br>
+               
+ 
+
+              
+
+
+        
+                 <span class="tito">- Navigation bar : </span> <br>
+
+                 Following the header element is the nav element, which is intended to provide navigation aids. The links
+                 grouped within this element will represent the menu of our website. This menu will be a simple bar located below the
+                  Headboard. For this reason, just like the header element, most of the styles we need to position the
+                      nav element were already assigned: nav is a block element so it will be placed below the previous element, its width
+                          by default it will be 100% so it will be as wide as its parent (the main div), and (also by default) it will be as tall
+                              as its content and default margins. Therefore, the only thing left for us to do is improve its appearance.
+                              onscreen. We achieve the latter by adding a gray background and a small internal margin to separate the options of the
+                               element border menu: <br><br>
+                               #menu { background: #CCCCCC; padding: 5px 15px; } <br>
+                               #menu li { display: inline-block; list-style: none; padding: 5px; font: bold 14px verdana, sans-serif; } <br>
+                                Listing 2-32. Adding styles for nav. <br><br>
+                                    In it
+                                      Listing 2-32, the first rule references the nav element by its id attribute, changes its background color, and
+                                          add 5px and 15px inner margins with the padding property. <br><br>
+
+
+                    
+               
+                   
+                    
+
+                      
+ <strong>Basic concepts :</strong> <br> The padding property works exactly like margin. Four values ​​can be specified:
+ top, right, bottom, left, in that order. If we only declare one value, it will be assigned for all spaces
+  around the content of the element. If instead we specify two values, then the first one will be assigned as the internal margin of
+   the top and bottom of the content and the second value will be assigned to the inner margin of the sides, left and right
+     Inside the navigation bar is a list created with the ul and li tags. <br><br> By default, the items in a list
+         They are positioned one above the other. To change this behavior and place each menu option next to the
+         another, we reference the li elements within this particular nav element using the #menu li selector, and
+             then we assign all of them the style display: inline-block to turn them into what are called inline boxes. <br><br>
+              Unlike block elements, elements affected by the standardized inline-block parameter in
+              CSS3 do not generate any line breaks but allow us to treat them as block elements and thus declare a value
+               of specified width. This parameter also adjusts the size of the element according to its content when the
+                width value was not specified. In this last rule we also remove the little graph generated by
+                default by browsers in front of each list option using the list-style property.
+                     <br><br>
+                      
+           
+   
+        
+         <span class="tito">- Section and aside :</span><br>
+
+         
+          
+
+         The next structural elements in our code are two boxes arranged horizontally. The Traditional Box Model is
+         built on CSS styles that allow us to specify the position of each box. Using the float property we can position
+         these boxes on the left or right side according to our needs. The elements we use in our HTM template
+         L to create these boxes are section and aside, each one identified with the id attribute and the section and column values
+             respectively.<br><br>
+              #section { float: left; width: 660px; margin: 20px; }<br>
+               #column { float: left; width: 220px; margin: 20px 0px; padding: 20px; background: #CCCCCC; } <br>
+               Listing 2-33. Creating two columns with the float property.<br><br>
+
+               La propiedad de CSS float es una de las propiedades más ampliamente utilizadas para aplicar el Modelo de Caja Tradicional. 
+               Hace que el elemento flote hacia un lado o al otro en el espacio disponible. Los elementos afectados por float actúan como 
+               elementos block (con la diferencia de que son ubicados de acuerdo al valor de esta propiedad y no el flujo normal del 
+               documento). Los elementos son movidos a izquierda o derecha en el área disponible, tanto como sea posible, respondiendo 
+               al valor de float.
+               With the rules of Listing 2-33 we declare the position of both boxes and their respective sizes, thus generating the columns
+               visible on the screen. <br><br>The float property moves the box to the available space on the side specified by its value, width
+               assigns a horizontal size and margin, of course, declares the element's margin. Affected by these values, the content
+               of the section element will be located on the left of the screen with a size of 660 pixels, plus 40 pixels of margin,
+                    occupying a total space of 700 pixels wide. The float property of the aside element also has the value left
+                        (left). This means that the generated box will be moved to the available space to its left. Because the
+                        previous box created by the section element was also moved to the left of the screen, now the space
+                            available will be only the one that this box left free. <br><br>The new box will be located on the same line as the first
+                             but to its right, taking up the remaining space on the line, creating the second column of our layout.
+                             The declared size for this second box was 220 pixels. We also add a gray background and set
+                              an internal margin of 20 pixels. As a final result, the width of this box will be 220 pixels plus 40 pixels
+                              added by the padding property (side margins were set to 0px). <br><br>
+         
+        
+
+   
+          
+    
+                    
+       
+
+       <strong> Basic concepts :</strong> <br>  
+    
+
+       The size of an element and its margins are added to obtain the actual value occupied on the screen. If we have an element of 200 pixels
+       wide and a margin of 10 pixels on each side, the actual area occupied by the element will be 220 pixels. The total of 20 pixels of the margin
+       is added to the 200 pixel element and the final value is rendered on the screen. The same goes for padding properties.
+       and border. Any time we add a border to an element or create a space between the content and the border using padding those values
+        will be added to the width of the element to get the actual value when the element is displayed on the screen. This actual value is
+        calculated with the formula: size + margins + internal margins + borders. <br><br>
+
+
+<strong>Do it yourself :</strong> <br> Read the code in Listing 2-25. Check every CSS rule created so far and look at
+the template the HTML elements corresponding to each of them. Follow the references, for example the keys of the elements
+ (like h1) and id attributes (like header), to understand how references work and how styles are assigned to each
+ element.
+ <br><br>
+
+
+          
+          
+                           
+            </p>
+        </div>
+      
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert9"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

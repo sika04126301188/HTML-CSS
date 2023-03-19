@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>qwert10.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon10" src="fotos/fm_112.jpg">
+            <h1 class="titelo">_   Box-sizing   : </h1> 
+            <p class="parami">
+
+
+           
+
+                There is an additional property built into CSS3 related to the structure and the Traditional Box Model. The
+                box-sizing property allows us to change how the total space occupied by an element on the screen will be calculated
+                forcing browsers to include the values ​​of the padding and border properties in the original width. What
+                explained above, each time the total area occupied by an element is calculated, the browser gets the
+                 final value using the following formula: size + margins + internal margins + borders. For this reason, if
+                  we declare the width property equal to 100 pixels, margin equal to 20 pixels, padding equal to 10 pixels and border equal to 1 pixel,
+                   the total horizontal area occupied by the element will be: 100+40+20+2= 162 pixels (note that we had to double the
+                    margin, padding and border values ​​in the formula because we consider that they were assigned both for
+                     both the right and left sides). This means that whenever you declare the width of an element with the property
+                     width, you will need to remember that the actual area to place the element on the screen will most likely be larger. Depending
+                      of your habits, it might sometimes be useful to force the browser to include the padding and border values ​​in the size of the
+                       element. In this case the new formula would be simply: size + margins. <br><br>
+      div {<br>
+           width: 100px;<br>
+            margin: 20px;<br>
+             padding: 10px; <br>
+             border: 1px solid #000000;<br>
+              -moz-box-sizing: border-box;<br>
+               -webkit-box-sizing: border-box; <br>
+               box-sizing: border-box; } <br>
+               Listing 2-36. Including padding and border in the size of the element. <br><br>
+
+               The box-sizing property can take two values. By default it is configured as content-box, which means
+                that browsers will add the padding and border values ​​to the size specified by width and height. Wearing
+                the border-box value instead, this behavior is changed so that padding and border are included inside
+                 of the element. Listing 2-36 shows the application of this property on a div element. This is just an example
+                      and we're not going to use it in our template, but it can be useful for some designers depending on how
+                      familiar are with the traditional methods proposed by previous versions of CSS. <br><br>
+                
+              <strog>IMPORTANT :</strog> <br>   At this point, the box-sizing property, like other important CSS3 properties studied in
+              upcoming chapters, it is experimental in some browsers. To effectively apply
+              your documents, you must declare it with the appropriate prefixes, as we did in Listing 2-36. prefixes
+              for the most common browsers are the following: <br><br>
+
+              -*- -moz- for Firefox. <br>
+              -*- -webkit- for Safari and Chrome.<br>
+             -*- -o- for Opera. <br>
+             -*- -khtml- for Konqueror. <br>
+           -*- -ms- for Internet Explorer. <br>
+            -*- -chrome- specific to Google Chrome. <br><br>
+               
+
+               
+ 
+
+              
+
+
+        
+                 <span class="tito">-   quick reference : </span> <br>
+              
+
+                 In HTML5 the responsibility for the presentation of the structure on the screen is more than ever in the hands of CSS. additions and
+                 Enhancements have been made in the latest version of CSS to provide better ways to organize documents and work with their elements.<br><br>
+ 
+ 
+ <strong>Attribute selector and pseudo classes </strong> <br><br>
+ 
+ CSS3 incorporates new mechanisms for referencing HTML elements. <br><br>
+ 
+ 
+ 
+ 
+    <span class="tito">-   Attribute Selector  : </span> <br>
+ 
+    Now we can use attributes other than id and class to find elements in the document and assign styles.
+    With the keyword[attribute=value] construct, we can reference an element that has a particular attribute with
+    a specific value. For example, p[name=”text”] will reference each p element with an attribute called name and the value
+         "text". CSS3 also provides techniques to make this reference even more specific. Using the following combinations
+          From symbols ^=, $= and *= we can find elements that start with the supplied value, elements that end with that
+          value and elements that have the provided text somewhere in the attribute value. For example, p[name^=”text”] will be
+           used to find p-elements that have an attribute called name with a value that starts with ”text”.<br><br>
+ 
+    <strong>Pseudo Class :</strong> <br> nth-child() This pseudo class finds a specific child by following the HTML tree structure.
+    For example, with the style span:nth-child(2) we are referencing the span element that has other span elements as siblings.
+         and is located at position 2. This number is considered the index. Instead of a number we can use the keywords
+         odd and even to reference elements with an odd or even index respectively (for example, span:nth child(odd)).<br><br>
+ 
+ 
+         <strong> Pseudo Class :</strong> <br> first-child This pseudo class is used to reference the first child, similar to :nth-child(1). <br><br>
+         <strong>Pseudo Class :</strong><br>  last-child This pseudo class is used to reference the last child. <br><br>
+             <strong>Pseudo Class :</strong> <br> only-child This pseudo class is used to reference an element that is the only child.
+              available from the same parent element.<br><br>
+                 <strong>Pseudo Class :</strong><br>  not() This pseudo class is used to reference every element except the declared one.
+                 in parentheses.<br><br>
+
+
+                     <span class="tito">-    Selectors : </span> <br> 
+ 
+                     CSS3 also introduces new selectors that help get to elements that are hard to reference using other techniques.
+                     Selector This selector references the element on the right when it has the element on the left as its parent. For example,
+                     div p will reference each element p that is a child of a div element. <br><br>
+ 
+    <span class="tito">-    Selector : </span> <br> 
+ 
+    + This selector references elements that are siblings. The reference will point to the element on the right when it is immediately
+    preceded by the one on the left. For example, span + p will affect p elements that are siblings and are located after
+         a span element.<br><br>
+  Selector ~ This selector is similar to the previous one, but in this case the element on the right does not have to be located
+   immediately after the one on the left.  <br><br>
+ 
+                
+
+
+                    
+               
+                   
+                    
+
+                      
+ 
+
+
+          
+          
+                           
+            </p>
+        </div>
+       
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert11"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

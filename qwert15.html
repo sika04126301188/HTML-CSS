@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>qwert15.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon15" src="fotos/fm_117.jpg">
+            <h1 class="titelo">_     HSLA       : </h1> 
+            <p class="parami">
+                        
+                            
+                
+                
+                Just as the rgba() function adds an opacity value to rgb(), the hsla() function does the same thing for the hsl() function.
+                The hsla() function is just a different function for generating colors, but it's more intuitive than rgba(). some designers
+                you'll find it easier to generate a custom color set using hsla(). The syntax of this function is: hsla(hue, saturation,
+                luminosity, opacity).   <br> <br>
+
+                #title { font: bold 36px MyNewFont, verdana, sans-serif; <br>
+                    text-shadow: rgba(0,0,0,0.5) 3px 3px 5px; color: hsla(120, 100%, 50%, 0.5); }<br>
+                    Listing 3-16. New color for title using hsla(). <br> <br>
+                    Following the syntax, hue represents the color extracted from an imaginary wheel and is expressed in degrees from 0 to 360. Close to 0
+                    and 360 are the red colors, about 120 the green ones and about 240 the blue ones. The saturation value is represented as a percentage,
+                     from 0% (grayscale) to 100% (full color or fully saturated). Lightness is also a percentage value from 0%
+                     (completely dark) to 100% (completely lit). The 50% value represents normal or average brightness. the last value,
+                      just like in rgba(), it represents the opacity.   <br> <br>
+
+            
+
+      <strong>Do it yourself :</strong><br> Replace the corresponding code in Listing 3-11 with the code in Listing 3-16 to test
+      the effect on your browser.<br> <br>
+
+
+      <span class="tito">-  Outline   : </span>  <br>
+    
+
+
+      The outline property is an old CSS property that has been expanded in CSS3 to include an offset value. This property
+      was used to create a second border, and now that border can be displayed away from the element's actual border.<br> <br>
+       #main { display: block; width: 500px; margin: 50px auto;<br>
+         padding: 15px; text-align: center; border: 1px solid #999999;<br>
+          background: #DDDDDD; outline: 2px dashed #000099; outline-offset: 15px; }<br>
+           Listing 3-17. Adding a second border to the header.<br> <br>
+           
+
+           In Listing 3-17 we add a second 2-pixel border to the styles originally applied to our template box.
+           with a displacement of 15 pixels. The outline property has similar characteristics and uses the same parameters as border.
+           The outline-offset property only needs a value in pixels. <br> <br>
+      
+
+<strong>Do it yourself :</strong><br> Replace the corresponding code in Listing 3-11 with the code in Listing 3-17 to test the effect
+in your browser. <br> <br>
+
+
+
+ <span class="tito">- Border-image    : </span>  <br>
+
+
+ The possible effects achieved by the border and outline properties are limited to simple lines and only a few configuration options.
+  The new border-image property was incorporated to overcome these limitations and leave the quality and variety of images up to the designer.
+  borders available offering the alternative of using own images. <br> <br>
+
+
+  <strong>Do it yourself :</strong> <br> We are going to use a PNG image that includes diamonds to test this property. Follow the next
+  link to download the diamonds.png file from our website and then copy this file to the same directory (folder) where it is
+  find its CSS file: www.minkbooks.com/ content/diamonds.png.
+ The border-image property takes an image and uses it as a pattern. According to the given values, the image is cut
+ like a cake, the obtained parts are then placed around the object to build the border.<br> <br>
+  
+
+ To get the job done, we need to specify three attributes: the name of the image file, the size of the pieces we want
+ get from the pattern and some keywords to declare how the pieces will be distributed around the object.<br>
+   <img class="imgofcontenido" src="fotos/fm_43.png"> <br>
+   Listing 3-18. A custom border for the header.<br><br>
+             
+   With the modifications made in Listing 3-18 we are defining a border of 29 pixels for the
+   our header box and then loading the diamonds.png image to build that border. The value 29 in the
+   border-image property declares the size of the pieces and stretch is one of the available methods to distribute
+   these pieces around the box. There are three possible values ​​for the last attribute. The repeat keyword will repeat
+    the pieces taken from the image as many times as necessary to cover the side of the element.<br><br> In this case, the size
+    of the pieces is preserved and the image will be cut if
+there is no more space to place it. The round keyword will consider how long the side to be covered is and adjust the size
+of the pieces to make sure they cover the entire side and no pieces are cut off. Finally, the keyword stretch (used in the
+Listing 3-18) stretch just one piece to cover the entire side. In our example we use the border property to define the
+border size, but you can also use border-with to specify different sizes for each side of the element
+(The border-with property uses four parameters, with syntax similar to margin and padding.) The same goes for size.
+of each piece, up to four values ​​can be declared to get different images of different sizes from the pattern. <br> <br>
+  
+  <strong>Do it yourself :</strong><br>Replace the corresponding code in Listing 3-11 with the code in Listing 3-18 to test the
+  effect on your browser.<br> <br>
+  
+
+   
+          
+                           
+            </p>
+        </div>
+        
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert16"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

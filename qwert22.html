@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>qwert22.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon22" src="fotos/fm_124.jpg">
+            <h1 class="titelo">_  event handlers : </h1> 
+            <p class="parami">
+           
+                
+                As we discussed earlier, Javascript code is normally executed after the user performs some action. These actions and
+                other events are processed by event handlers and Javascript functions associated with them. There are three different ways of
+                register an event for an HTML element: we can add a new attribute to the element, register an event handler as a
+                element property or use the new standard addEventListener() method.<br> <br> 
+               
+
+
+
+
+ <span class="tito">- Basic concepts : </span>  <br>
+ 
+ In Javascript user actions are called events. When the user performs an action, such as a mouse click or pressure
+ of a key, a specific event for each action and each element is fired. In addition to the events produced by the users, there are
+  also other events fired by the system (for example, the load event that fires when the document is fully loaded).
+   These events are handled by code or functions. The code that responds to the event is called a handler. When we register a handler
+    what we do is define how our application will respond to a particular event. After the standardization of the method
+    addEventListener(), this procedure is usually called "event listener", and what we do to prepare the code that
+     will respond to that event is to “add a listener” to a particular element.<br><br>
+
+
+ <span class="tito">- Online event handlers  : </span>  <br>
+ We already used this technique in the code in Listing 4-1 by including the onclick attribute on the p element (review this code to verify
+ How does it apply). It is simply a matter of using the attributes provided by HTML to register events for a particular element.
+  This is a deprecated technique but still extremely useful and practical in some circumstances, especially when we need to do
+   quick modifications for testing. <br><br>
+
+
+    <span class="tito">- Event handlers as properties : </span>  <br>
+
+    To avoid the complications of the inline technique, we must register the events from the Javascript code. Wearing
+    Javascript selectors we can reference the HTML element and assign the event handler we want to it as if it were a property.
+     In the code in Listing 4-2 you will find this technique in practice. Two event handlers were assigned as properties
+      to different elements. The onload event handler was registered for the window using the window.onload construct, and
+      the onclick event handler was registered for the first p element found in the document with the line of code
+          document.getElementsByTagName('p')[0].onclick.<br><br>
+
+
+       <span class="tito">- Basic concepts : </span>  <br>
+       Event handler names are constructed by adding the prefix on to the event name. For example, the name of the
+       event handler for the click event is onclick. When we are talking about onclick we usually refer to the
+       code that will be executed when the click event occurs. Before HTML5, this was the only technique available to use
+       event handlers from Javascript that worked in all browsers. Some browser manufacturers were
+        developing their own systems, but nothing was adopted by all until the new standard was declared. for this
+        This is why we recommend using this technique for compatibility reasons, but we don't suggest it for your HTML5 applications.<br><br>
+
+         <span class="tito">-  The addEventListener() method : </span> <br>
+         
+         The addEventListener() method is the ideal technique and the one that is considered standard by the HTML5 specification. This method
+          has three arguments: the name of the event, the function to be executed, and a boolean value (false or true) that indicates how an
+          event will be fired on overlapping elements.<br><br>
+          <img class="imgofcontenido" src="fotos/fm_55.png"><br>
+          Listing 4-8. Adding event listeners with addEventListener().<br><br>
+
+
+          Listing 4-8 presents the same code as Listing 4-2 but now a listener was added for each event using the method
+          addEventListener(). To organize the code in the click() function, we assign the reference to the element to a variable called
+          element and then add the listener for the click event using that variable. The syntax of the addEventListener() method is
+          the one shown in Listing 4-8. The first attribute is the name of the event. The second is the function to be executed, which
+          it can be a reference to a function (as in this case) or an anonymous function. <br><br>The third attribute will specify, using true
+          (true) or false, how multiple events will be fired. For example, if we are listening to the click event on two
+          elements that are nested (one inside another), when the user clicks on these elements two click events
+          they are fired in an order that depends on this value. If the attribute is declared true for one of the elements, then
+          that event will be considered first and the other after. Normally the value false is the most suitable for most of the
+           situations.<br><br>
+         
+          <span class="tito">- Basic concepts : </span> <br>
+          
+          Anonymous functions are functions that are dynamically declared and have no name (which is why they are called "anonymous"). This kind of
+          functions are extremely useful in Javascript, they help us to organize the code and not overpopulate the global object with
+          independent functions. We will use anonymous functions frequently in the following chapters.<br><br> Even when the results
+          Applying this technique and the previous one are similar, addEventListener() allows us to add as many listeners as we need
+          for the same element. This distinction gives addEventListener() an advantage over the rest, making it the technique
+           ideal for HTML5 applications. Because events are the key to interactive websites and applications, many
+           were added in the HTML5 specification. In future chapters we will study each of these new events and the
+           environment in which they work.<br><br>
+         
+
+
+
+
+
+
+
+
+
+          
+                           
+            </p>
+        </div>
+       
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="q23"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

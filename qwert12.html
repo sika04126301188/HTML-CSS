@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>qwert12.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon12" src="fotos/fm_114.jpg">
+            <h1 class="titelo">_    Border-radius    : </h1> 
+            <p class="parami">
+                        
+                            
+                
+                For many years designers have suffered trying to achieve the effect of rounded corners in the boxes of their web pages. The process
+                it was almost always frustrating and exhausting. Everyone has suffered from it. If you watch any video presentation of the new
+                built-in features in HTML5, whenever someone talks about CSS3 properties that make it possible to easily generate
+                rounded corners, the audience goes crazy. Rounded corners were the kind of things that made us think: “it should be
+                easy to do”. However it never was. This is the reason why, among all the new possibilities and incredible properties
+                 built into CSS3, the one we'll explore first is border-radius:<br> <br> 
+
+  <img class="imgofcontenido" src="fotos/fm_36.png"><br> 
+  Listing 3-3. Generating rounded corners.<br> <br>
+  The border-radius property is currently experimental so we must use the prefixes –moz- and -webkit- so that
+  work in browsers based on Gecko and WebKit engines, such as Firefox, Safari and Google Chrome (the prefixes were studied
+  and applied in Chapter 2). If all the corners have the same curvature we can use a single value. However, as
+   happens with the margin and padding properties, we can also declare a different value for each one:<br><br>
+            <img class="imgofcontenido" src="fotos/fm_37.png"><br> 
+            Listing 3-4. Different values ​​for each corner.<br><br>
+            As you can see in Listing 3-4, the four values ​​assigned to the border-radius property represent different locations.
+             Moving around the box clockwise, the values ​​will be applied in the following order: top left corner,
+             upper right corner, lower right corner and lower left corner. Values ​​are always given in the direction of the
+              clockwise, starting at the top left corner. As with margin or padding, border-radius can also work
+              only with two values. The first value will be assigned to the first and third corners (upper left, lower right), and the second
+               value to the second and fourth corners (top right, bottom left). We can also shape the corners by declaring a
+               second group of values ​​separated by a slash. The values ​​to the left of the bar will represent the horizontal radius while
+               that the values ​​to the right represent the vertical radius. Combining these values ​​generates an ellipsis: <br> <br> 
+    <img class="imgofcontenido" src="fotos/fm_38.png"><br>  
+    Listing 3-5. Elliptical corners.<br> <br> 
+
+                 
+                
+      
+
+      
+
+
+
+
+
+
+
+        <span class="tito">-  Do it yourself : </span><br>  Copy into the CSS file called newcss3.css the styles you want
+        try and open the HTML file generated with Listing 3-1 in your browser to check the results. Box-shadow Now that
+        finally we have the possibility of generating nice corners for our boxes we can take a risk with something else. Other
+         very good effect, which had been
+extremely difficult to achieve until now, is shadows. For years designers have combined images, elements and some
+CSS properties to generate shadows. Thanks to CSS3 and the new box-shadow property we can apply shadows to our boxes with just
+ a simple line of code:<br> <br> 
+  <img class="imgofcontenido" src="fotos/fm_39.png"><br>  
+  Listing 3-6. Applying shadow to our box. <br><br> 
+             
+
+  The box-shadow property needs at least three values. The first, which you can see in the rule in Listing 3-6,
+  it is the color. This value was constructed here using the rgb() function and decimal numbers, but we can write it
+   in hexadecimal numbers as well, as we did previously for other parameters in this book. the next two
+    values, expressed in pixels, set the offset of the shadow. <br> <br>
+    This offset can be positive or negative.
+     negative. The values ​​indicate, respectively, the horizontal and vertical distance from the shadow to the element.
+     Negative values ​​will position the shadow to the left and above the element, while positive values
+     will create the shadow to the right and below the element. Values ​​of 0 or null will position the shadow exactly
+      behind the element, allowing the possibility of creating a blurred effect all around it.<br> <br> 
+ 
+
+
+ 
+ <span class="tito">-  Do it yourself  : </span><br>   To test the different parameters and possibilities that we have
+ To assign a shadow to a box, copy the code from Listing 3-6 into the CSS file and open the HTML file with the template
+  from Listing 3-1 in your
+browser. You can experiment by changing the values ​​of the box-shadow property and you can use the same code to experiment as well
+ with the new parameters discussed below. The shadow we got so far is solid, no gradients or transparencies
+  (not really like a shadow usually appears). There are some more parameters and changes that we can implement to improve the
+  shadow appearance. A fourth value that can be added to the property already studied is the blur distance. <br> <br>
+  with this effect
+   now the shadow will look real. You can try to use this new parameter by declaring a value of 10 pixels to the rule in Listing 3-6,
+    as in the following example: box-shadow: rgb(150,150,150) 5px 5px 10px; Listing 3-7. Adding the blur value to box-shadow.
+     Adding yet another value in pixels to the end of the property will spread the shadow. This effect slightly changes the nature of the
+      shadow expanding the area it covers. Although we do not recommend using this effect, it may be applicable to some designs.<br> <br> 
+ 
+ 
+ <span class="tito">- Do it yourself : </span><br>  Try adding a value of 20 pixels to the end of the style in Listing 3-7 and combine this
+ code with the code in Listing 3-6 to test it. IMPORTANT: Always remember that at this time the properties studied are
+ experimental. To use them, you must declare each one by adding the corresponding prefixes, such as –moz- or -webkit-, according to the
+ browser you use (in this example, Firefox or Google Chrome). <br> <br>
+ The last possible value for box-shadow is not a number but rather
+ a keyword: inset. This keyword converts the outer shadow to an inner shadow, which provides a shadow effect.
+  depth to the affected element. box-shadow: rgb(150,150,150) 5px 5px 10px inset; Listing 3-8. inner shadow. The style in
+   Listing 3-8 will show an inner shadow set back from the edge of the box by about 5 pixels and with a 10 pixel blur effect.<br> <br> 
+ 
+ 
+ 
+ <span class="tito">-  Do it yourself : </span><br>  The styles in Listings 3-7 and 3-8 are examples only. To check the
+ effects in your browser, you must apply these changes to the entire set of rules presented in Listing 3-6.
+
+ IMPORTANT: Drop shadows do not expand the element or increase its size, so you will have to carefully control that
+  the space available is enough for the shadow to be exposed and correctly drawn on the screen. <br> <br> 
+ 
+          
+          
+                           
+            </p>
+        </div>
+        
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert13"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

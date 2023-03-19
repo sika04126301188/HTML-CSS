@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>qwert25.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon25" src="fotos/fm_127.jpg">
+            <h1 class="titelo">_   Playing video with HTML5: </h1> 
+            <p class="parami">
+           
+                
+
+
+                One of the most mentioned features of HTML5 was the ability to render video. The enthusiasm had nothing to do with the new
+                tools provided by HTML5 for this purpose, but rather with the fact that since the videos became an essential piece
+                of the Internet, everyone expected native support from browsers. It was like everyone knew the importance of videos except
+                 those in charge of developing the technologies for the web.<br><br> But now that we have native support for videos and even a
+                  standard that will allow us to create cross-browser compatible video processing applications, we can understand that
+                  the situation was much more complicated than we had imagined. From encoders to resource consumption, the reasons
+                  to not implement video natively in browsers were much more complex than the code required to do so. A
+                  Despite these complications, HTML5 finally introduced an element to insert and play video in an HTML document. The
+                  video element uses opening and closing tags and only a few parameters to achieve its function. The syntax is
+                      extremely simple and only the src attribute is required:<br>  <br>  
+
+
+
+
+       <img class="imgofcontenido" src="fotos/fm_56.png"><br> 
+       Listing 5-1. Basic syntax for the video element.<br> <br>
+
+       In theory, the code in Listing 5-1 should be more than enough. I repeat, in theory. But as we explained earlier, things are
+        they get a little more complicated in real life. First we must provide at least two different files with different video formats:
+         OGG and MP4. This is because although the video element and its attributes are standard, there is no standard video format.
+             First, some browsers support a video encoder that others don't, and second, the encoder used in the MP4 format (the
+              only supported by major browsers such as Safari and Internet Explorer) is under a commercial license. The OGG Formats
+               and MP4 are containers for video and audio. OGG contains Theora video and Vorbis audio encoders, and those available for the
+                MP4 container are H.264 for video and AAC for audio. Right now OGG is recognized by Firefox, Google Chrome and Opera,
+                 while MP4 works on Safari, Internet Explorer and also Google Chrome.<br> <br> 
+ 
+
+           <span class="tito">- The video element : </span> <br>
+           Let's try to ignore these complications for a moment and enjoy the simplicity of the video element. This item offers several
+                attributes to set its behavior and configuration. The width and height attributes, just like in other HTML elements already
+                 known, declare the dimensions for the player element or window. The size of the video will be automatically adjusted
+                 to enter within these values, but they were not considered to resize the video but to limit the area occupied by the
+                 same to maintain consistency in the design. The src attribute specifies the source of the video. This attribute can be overridden
+                 by the source element and its own src attribute to declare multiple
+                 fonts with different formats, as in the following example:<br> <br> 
+
+      <img class="imgofcontenido" src="fotos/fm_57.png"><br> 
+      Listing 5-2. Video player with default controls and compatible with HTML5 browsers.<br> <br>
+
+      In Listing 5-2, the video element was expanded. Now inside the element tags are two source elements. these new
+          elements provide different video sources for browsers to choose from. The browser will read the source tag and decide
+          which file to play according to the supported formats (MP4 or OGG).<br>  <br>  
+
+
+
+
+  <strong> Do it yourself :</strong><br>   Create a new empty HTML file named video.html (or any other name you like),
+  copy the code
+     in Listing 5-2, and open the file in different browsers to see how the video element works in each.
+         one of them. <br>  <br>  
+
+
+
+         <span class="tito">-  Attributes for video : </span> <br>
+        
+         We included an attribute on the video tag in Listings 5-1 and 5-2 that probably caught your attention. The
+              controls attribute is one of several attributes available for this element. This one, in particular, shows
+               video controls provided by the default browser. When the attribute is present each browser
+                will activate its own interface, allowing the user to start playing the video, pause it or skip forward.
+                 a specific box, among other functions. Along with controls, we can also use the following: <br>  <br> 
+           
+
+
+
+<span class="tito">- Autoplay : </span> <br>
+  
+When this attribute is present, the browser will automatically start playing the video as soon as it can.<br> <br>
+
+<span class="tito">- loop : </span> <br>
+
+If this attribute is specified, the browser will start playing the video again when it reaches the end.<br> <br>
+
+
+<span class="tito">- poster : </span> <br>
+
+This attribute is used to provide an image that will be displayed while we wait for the video to start playing. <br> <br>
+
+<span class="tito">- preload : </span> <br>
+
+This attribute can receive three different values: none, metadata or auto. The first indicates that the video is not
+should be cached, usually for the purpose of minimizing unnecessary traffic. The second value, metadata, will recommend to the browser
+that tries to capture information about the source (for example, dimensions, duration, first frame, etc…). The third value, auto, is
+the default value that will prompt the browser to download the file as soon as possible. <br> <br> 
+
+  <img class="imgofcontenido" src="fotos/fm_58.png"><br> 
+  Listing 5-3: Leveraging the attributes of the video element. <br> <br>
+
+  In Listing 5-3, the video element was populated with attributes. Due to differences in behavior between a browser and
+       other, some attributes will be enabled or disabled by default, and some of them won't even work in some
+        browsers or under certain circumstances. To get full control over the video element and the media played,
+             we will have to program our own video player in Javascript taking advantage of the new methods, properties and
+             built-in events in HTML5.<br> <br> 
+ 
+        
+
+
+
+          
+                           
+            </p>
+        </div>
+        
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert"> <button class="ho">back. . . </button> </a>  </div>
+       </div>
+    </div>
+
+       <!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>qwert7.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon7" src="fotos/fm_109.jpg">
+            <h1 class="titelo">_ New hierarchy for headers : </h1> 
+            <p class="parami">
+
+
+                In our template we use h1 and h2 elements to declare titles and subtitles for different sections of the document. The styles by
+                default of these elements are always very far from what we want and also in HTML5 we can reconstruct the H hierarchy several
+                times in each section (as we learned in the previous chapter). The h1 element, for example, will be used several times in the document,
+                     not only for the main title of the web page as it happened before but also for internal sections, so we have
+                     to give it the appropriate styles:<br><br>
+                      h1 { font: bold 20px verdana, sans-serif; } <br>
+                      h2 { font: bold 14px verdana, sans-serif; } <br>
+                     Listing 2-27. Adding styles for the h1 and h2 elements.<br><br>
+            The font property, assigned to the h1 and h2 elements in Listing 2-27, allows us to declare all the styles for the text in one font.
+                single line. The properties that can be declared using font are: font-style, font-variant, font-weight, font-size/line-height,
+                 and font-family in this order. With these rules we are changing the thickness, size and font of the text inside the elements
+                 h1 and h2 to the values ​​we want. <br><br>
+ 
+
+              
+
+
+        
+                 <span class="tito">-  Declaring new HTML5 elements : </span> <br>
+                
+
+                 Another basic rule that we must declare from the beginning is the default definition of HTML5 structural elements.
+                 Some browsers do not yet recognize these elements or treat them as inline elements. we need to declare
+                  the new HTML5 elements as block elements to ensure that they will be treated as is normally done with
+                  div elements and thus build our box model: header, section, footer, aside, nav, article, figure,
+                      figcaption, hgroup{ display: block; } Listing 2-28. Default rule for HTML5 structural elements.
+                      From now on, the elements affected by the rule in Listing 2-28 will be positioned on top of each other unless
+                      that we specify something different later.   <br><br>
+                    
+               
+                   
+                     <span class="tito">- Centering the body  :</span><br>
+
+                      
+
+                     The first element that is part of the box model is always body. Normally, for different design reasons,
+                     the content of this element must be positioned horizontally. We must always specify the size of
+                     this content, or a maximum size, for consistent layout across different configuration settings.
+                     screen.<br><br>
+                      body { text-align: center; }<br>
+                      Listing 2-29. Centering the body.<br><br>
+                       By default, the body tag
+                         (like any other block element) has a width value set to 100%. This means that the
+                         body will occupy the full width of the browser window. Therefore, to center the page on the
+                         screen we need to center the content within the body. With the added rule in Listing 2-29, everything
+                 inside body will be centered in the window, thus centering the entire web page. <br><br>
+                      
+           
+   
+        
+         <span class="tito">-Creating the main box :</span><br>
+
+         
+         Continuing with the design of our template, we must specify a size or maximum size for the body content.
+         As you may remember, in Listing 2-25 earlier in this chapter we added a div element to the template to group
+             all the boxes inside the body. <br><br>This div will be considered the main box for the construction of our model
+                 box (this is the purpose for which we added it). In this way, modifying the size of this element we do it by
+                 same time for everyone else: <br><br>
+                 #group { width: 960px; margin: 15px auto; text-align: left; }<br>
+                  Listing 2-30. Defining the properties of the main box.<br><br>
+                   The rule in Listing 2-30 is first referencing an element through
+                  of the value of its id attribute. The # character is telling the browser that the element affected by this set of
+                  styles has the id attribute with the value group. This rule provides three styles for the main box. the first style
+                  sets a fixed value of 960 pixels. This box will always have a width of 960 pixels, which represents a common value.
+                  for a website these days (the values ​​are between 960 and 980 pixels wide, however these parameters
+                  they change constantly over time, of course). The second style is part of what we call the Box Model
+                  Traditional.<br><br>In the previous rule (Listing 2-29), we specified that the content of the body would be centered horizontally.
+                  with the style text-align: center. But this only affects inline content, such as text or images. For block elements,
+                   as a div, we need to set a specific value for its margins that automatically scales them to the size of
+                        its parent element. The margin property used for this purpose can have four values: top, right,
+                        bottom, left, in that order. This means that the first value declared in the style represents the margin
+                        from the top of the element, the second is the right margin, and so on.<br><br> However, if
+                         we only write the first two parameters, the rest will take the same values. In our example we are using
+                         this technique. In Listing 2-30, the style margin: 15px auto assigns 15 pixels to the top and bottom margin of the
+                         div element that is affecting and declares as automatic the size of the left and right margins
+                              (the two declared values ​​are used to define the four margins). In this way, we will have generated
+                               a space of 15<br><br>
+
+                               pixels at the top and bottom of the body and the spaces to the sides (left and right margin) will be calculated
+                               automatically according to the size of the document body and div element, effectively centering the content on screen.
+                                   The web page is already centered and has a fixed size of 960 pixels. The next thing we need to do is prevent a problem
+                                   That happens in some browsers. The text-align property is inheritable. This means that all elements within the
+                                   body and its content will be centered, not just the main box. The style assigned to <body> in Listing 2-29 will be assigned
+                                       to each of their children. We must return this style to its default value for the rest of the document. the third and
+                                        The last built-in style in the rule in Listing 2-30 (text-align: left) accomplishes this purpose. The end result is
+                                        that the content of the body is centered but the content of the main box (the div identified as grouping)
+                                            is again left-aligned, so all other HTML inside this box inherits
+                                            this style.<br><br>
+          
+    
+                    
+       
+
+       <strong>Do it yourself :</strong> <br>  If you haven't already done so, copy each of the rules listed up to this point into a
+       empty text file named mystyles.css. This file must be located in the same directory (folder) as the HTML file
+       with the code in Listing 2-25. When finished, you should have two files, one with the HTML code and another called mystyles.css
+       with all the CSS styles studied from Listing 2-26. Open the HTML file in your browser and on the screen you can see the
+       created box. <br><br>
+
+          
+          
+                           
+            </p>
+        </div>
+        
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert8"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>qwert20.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer ">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+        <div class="contenidito">
+            <div class="contii">
+            <img class="imgofcontenidon20" src="fotos/fm_122.jpg">
+            <h1 class="titelo">_ embedded      : </h1> 
+            <p class="parami">
+           
+                
+
+                
+
+                To work with long codes and custom functions we must group the codes in the same place between labels
+                script. The script element acts exactly the same as the style element used to embed CSS styles. help us organize
+                the code in one place, affecting HTML elements through references. Just like with the style element,
+                in HTML5 we should not use any attribute to specify language. It is no longer necessary to include the type attribute in the tag
+                script. HTML5 assigns Javascript by default.<br> <br> 
+  <img class="imgofcontenido" src="fotos/fm_53.png"> <br> 
+  Listing 4-2. Embedded JavaScript. <br> <br> 
+
+  The script element and its content can be positioned anywhere in the document, within or between other elements.
+  For clarity, we recommend always placing your Javascript codes in the head of the document (as in the example in Listing 4-2).
+   and then referencing the elements to be affected using the appropriate Javascript methods for that purpose. There are currently three
+   available methods to reference HTML elements from Javascript: <br> <br>
+ 
+ • getElementsByTagName (used in Listing 4-2) references an element by name or keyword.<br>
+ 
+  • getElementById references an element by the value of its id attribute.<br>
+ 
+  • getElementsByClassName is a new addition that allows us to reference an element by the value of its class attribute.<br> <br>  
+
+
+
+  Even if we follow the best practice (position the code inside the document header), one situation must be considered:
+  the document code is read sequentially by the browser and we cannot reference an element that has not yet been created. In it
+   Listing 4-2, the code is positioned in the head of the document and is read by the browser prior to the creation of the p element
+       that we are referencing. <br><br>
+       If we had tried to affect the p element directly with a reference, we would have received a message
+        error announcing that the element does not exist. To avoid this problem, the code was converted to a function called
+         showalert(), and the reference to the p element along with the event handler were placed in a second function
+  call click(). Functions are called from the last line of code using another event handler
+  (in this case associated with the window) called onload.<br><br>
+  This handler will execute the click() function when the
+  document is fully loaded and all elements created. It is time to analyze how the document of the
+  Listing 4-2 is executed. First the Javascript functions are loaded (declared) but not executed. Later
+    HTML elements, including p elements, are created. And finally, when the entire document is
+        loaded in the browser window, the load event is fired and the click() function is called. In this function, the
+         getElementsByTagName method references all p elements.<br><br>
+             This method returns an array containing a
+             list of elements of the specified class found in the document. However, using the index[0] at the end of the method
+              we indicate that we only want the first element of the list to be returned. Once this element is identified, the
+              code register handler
+
+              onclick events for the same. The showalert() function will be executed when the click event is fired on this showing element.
+              the message “clicked!”. It may seem like a lot of code and work to reproduce the same effect achieved by a single line in the example.
+              from Listing 4-1. However, considering the potential of HTML5 and the complexity achieved by Javascript, the concentration of the code in
+              a single place and the proper organization represents a great advantage for our future implementations and for making our sites
+               web and applications easy to develop and maintain. <br><br>
+
+
+
+ <span class="tito">- Basic concepts    : </span>  <br>
+
+ A function is a group of code that is executed only when the function is invoked (activated or called) by its name. Normally, one
+ function is called using its name and some values ​​enclosed in parentheses (for example, click(1,2)). An exception to this syntax
+  is used in Listing 4-2. In this code we don't use parentheses because we are passing only the function reference to the event, not the
+  result of its execution. To learn more about Javascript features, visit our website and follow the links to e
+  this chapter. <br><br>
+
+<span class="tito">-   external files    : </span>  <br>
+
+Javascript codes grow exponentially when we add new features and apply some of the previously mentioned APIs.
+Embedded codes increase the size of our documents and make them repetitive (each document must include the same
+codes). To reduce download times, increase our productivity and be able to distribute and reuse our codes in each
+document without compromising efficiency, we recommend saving all Javascript code in one or more external files and calling them using
+the src attribute: <br><br>
+<img class="imgofcontenido" src="fotos/fm_54.png"> <br> 
+Listing 4-3. Loading the code from external files.<br><br>
+
+
+The script element in Listing 4-3 loads the Javascript codes from an external file called mycode.js. From now on, we can
+insert our codes into this file and then include the same in any document on our website that needs it. From the
+user perspective, this practice reduces download times and access to our website, while for us it simplifies the
+organization and easy maintenance. <br><br>
+
+ <strong>Do it yourself :</strong> <br> Copy the code from Listing 4-3 into the previously created HTML file. Create a new file
+ empty text called mycode.js and copy the Javascript code from Listing 4-2 into it. Note that only the code between the
+ script tags should be copied, not including the tags themselves.<br><br> 
+
+
+
+
+
+
+
+          
+                           
+            </p>
+        </div>
+    
+</div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="q21"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>

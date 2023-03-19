@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>qwert6.com</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="qwert.css">
+        <meta name="keyword"content="qwert,wqert,ewqrt,qtrew,">
+        <meta name="descreption" content="This is a page that teaches you the HTML programming language
+        and CSS and help you to create web sites include so many pages and help you to be a programmer">
+        <meta name="author" content="sameer salama ">
+        <meta charset="utf-8">
+    </head>
+    <body>
+       
+            <!------------------------head-secshen----------------------------->
+         
+         
+            <div class="head-secshen si">
+                <div class="on">
+                    <div class="cont">
+                       
+                               <a class="name" href="qwert.html"> <h1 class="head-name">al<span style="color:#0080ff; font-family: algerian;" >j</span>ise<span style="color:#ff0000;font-family: algerian;">r</span></h1></a> 
+                                   <div class="lista">
+                               <ul>
+                                   <li class="li"><a href="qwert.html">Home</a></li>
+                                   <li class="li"><a href="qwert1.html">about</a></li>
+                                   <li class="li"><a href="qwert1.html">Communication</a></li>
+                                   <li class="li"><a href="qwert5.html">Most important</a></li>
+                                   
+                               </ul>
+                               </div> 
+
+              
+               </div>
+           </div>
+       </div>
+        <!------------------------head-secshen------------------------------------------------------------------------------->
+        <!------------------------contenido-secshen-------------------------------------------------------------------------->
+        <div class="cont">
+            
+        <div class="contenidito">
+<div class="contii">
+            <img class="imgofcontenidon6" src="fotos/fm_108.jpg">
+            <h1 class="titelo">_ Traditional box model  : </h1> 
+            <p class="parami">
+
+                It all started with boards. The tables were the elements that unintentionally became the ideal tool used by
+                developers to create and organize content boxes in
+               the screen. This can be considered the first box model on the web. Boxes were created by expanding cells and
+                combining rows of cells, columns of cells and entire tables, one on top of another or even nested. when the sites
+                websites grew and became more and more complex this practice began to present serious problems related to the
+                 size and maintenance of the code needed to create them. These initial problems necessitated what is now
+                 we see as a natural practice: the division between structure and presentation.<br><br> Using div tags and CSS styles was
+                 possible to override the tables function and effectively separate the HTML structure from the presentation.
+                 With div elements and CSS we can create boxes on the screen, position these boxes to one side or the other and
+                      give them a specific size, color or border among other characteristics. CSS provides specific properties
+                      that allow us to organize the boxes according to our wishes. These properties are powerful enough
+                       as to create a box model that became what we know today as a Box Model
+                       Traditional.<br><br> Some deficiencies in this model kept the tables alive for some time,
+                        but the main developers, influenced by the success of Ajax implementations
+                        and a huge number of new interactive apps gradually went back to div tags
+                            and CSS styles into a standard. Finally the Traditional Box Model was adopted on a large scale.  <br><br>
+                .
+
+              
+
+
+        
+                 <span class="tito">- Template  : </span> <br>
+                 In Chapter 1 we built an HTML5 template. This template has all the necessary elements to provide
+                 structure to our document, but some details must be added to apply the CSS styles and the Model
+                  Traditional Box. This model needs to group boxes together to order them horizontally. Because the
+                  entire body content is created from boxes, we need to add a div element to group them, center them
+                      and give them a specific size. The new template will look like this:<br><br>
+                       <img class="imgofcontenido" src="fotos/fm_33.png"><br>
+                       Listing 2-25. New HTML5 template ready for CSS styling. Listing 2-25 <br><br>
+                 
+                 
+                       provides a new template ready to receive CSS styles. Two important changes can be distinguished by comparing
+                       this code with the one in Listing 1-18 in Chapter 1. The first is that several labels have now been identified with
+                       the id and class attributes. This means that we can reference a specific element from the CSS rules with the
+                        value of its id attribute or we can modify several elements at the same time using the value of its class attribute.
+                        The second change made to the old template is the addition of the div element mentioned above.<br><br>
+                             This div was identified with the id=”group” attribute and value, and is closed at the end of the body with
+                                 the closing tag /div. This element is responsible for grouping all the other elements allowing us to
+                                 apply the box model to the body and designate its horizontal position, as we will see later.  <br><br>
+                   
+                    
+                   
+
+
+<strong>do it yourself :</strong><br> Compare the code in Listing 1-18 in Chapter 1 with the code in Listing 2-25 in this
+chapter and place the opening and closing tags of the div element used to group the rest. Also
+    check which elements are now identified with the id attribute and which with the class attribute. Confirm that the
+    id attribute values ​​are unique for each tag. You will also need to replace the code in the created HTML file
+    above by Listing 2-25 to apply the following CSS styles. With the HTML document finished it is time to work
+    in our styles file.<br><br>
+    
+           
+   
+        
+         <span class="tito">- universal selector :</span><br>
+
+        
+         Let's start with some basic rules that will help us provide consistency to the design: <br><br>
+         
+         * { margin: 0px; padding: 0px; } <br>
+         Listing 2-26. General CSS rule.<br><br>
+         
+         Normally, for most elements, we need to customize the margins or just keep them to a minimum.
+         Some default elements have margins that are non-zero and in most cases too wide.
+         As we go through the creation of our design we will find that most
+         of the elements used must have a margin of 0 pixels. To avoid having to constantly repeat styles,
+         we can use the universal selector.<br><br> The first rule in our CSS file, presented in Listing 2-26, ensures that
+         that every element will have an inner and outer margin of 0 pixels. From now on we will only need to modify the margins
+          of the elements that we want to be greater than zero.<br><br>
+         
+         
+    
+                    
+          <strong>Basic concepts :</strong> <br>Remember that in HTML each element is considered as a box. the margin
+          is actually the space around the element, the one outside the border of that box (the padding style,
+           on the other hand, it is the space around the content of the element but inside its borders, such as the space between the title
+           and the border of the virtual box formed by the h1 element that contains that title). <br><br>Margin size can be defined
+               by specific sides of the element or all its sides at once. The style margin: 0px in our example sets
+                a 0 or null margin for each element of the box. If the size had been specified as 5 pixels, for example,
+                the box would have a space 5 pixels wide all the way around. This means that the box would be separated from
+                its neighbors by 5 pixels. We will return to this topic later in this chapter. <br><br>
+
+            <strong>Do it yourself :</strong><br> We must write all the necessary rules to style our template
+            in a CSS file. The file has already been included in the HTML code by means of the link tag, so the only thing that
+            All we have to do is create an empty text file with our favorite text editor, save it with the name mystyles.
+            css and then copy inside it the rule from Listing 2-26 and all the ones below. 
+            <br><br>
+
+          
+          
+                
+                           
+            </p>
+        </div>
+        
+    </div>
+
+        <!------------------------contenido-secshen--------------------------------------------------------------------------------->
+
+
+
+
+       <div class="cont">
+           <div class="suma">  <a href="qwert7"> <button class="ho">Next. . . </button> </a>  </div>
+       </div>
+    </div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="cont">       
+        <div class="contenidodelfoteer "><a href="qwert" target="_blank">  Home </a></div>
+        <div class="contenidodelfoteer "><a href="qwert1"target="_blank">  about  </a></div>
+        <div class="contenidodelfoteer "><a href="#"target="_blank">  who are we  </a></div>
+        <div class="contenidodelfoteer "><a href="#Communication"target="_blank">  +584126301188 </a></div>
+        <div class="contenidodelfoteer "><a href="qwert5"target="_blank"> Most important </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.w3schools.com/"target="_blank"> w3schools.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"target="_blank"> google.com/maps  </a></div>
+        <div class="contenidodelfoteer "><a href="https://es.pngtree.com/"target="_blank">  pngtree.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://code.visualstudio.com/"target="_blank"> visualstudio.com  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.sublimetext.com/"target="_blank">  sublimetext.com </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.google.es/intl/es_es/adsense/start/?gclid=EAIaIQobChMIm9H6vt2m9wIVFlNyCh0tyw7WEAAYASAAEgLIu_D_BwE"target="_blank">|| google adsense  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.amazon.com/s?k=windows+10&ref=pd_sl_98lbh0h6n1_e"target="_blank"> windows  </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.namecheap.com/?clickID=xKW0y5QGcxyIWHPSglQQNWWDUkGS0I3G-wqmQQ0&irgwc=1&utm_source=IR&utm_medium=Affiliate&utm_campaign=1238546&affnetwork=ir&ref=ir"target="_blank"> namecheap </a></div>
+        <div class="contenidodelfoteer "><a href="https://www.squarespace.com/websites/create-a-blog/?channel=pnb&subchannel=go&campaign=pnb-go-row_global-en-comp_general-e&subcampaign=(wordpress_wordpress_e)&&utm_source=google&utm_medium=pnb&utm_campaign=pnb-go-row_global-en-comp_general-e&utm_term=wordpress&gclid=EAIaIQobChMI7OLF1P619wIVH8mUCR3fQwvQEAAYASAAEgLkLvD_BwE&gclsrc=aw.ds"target="_blank">wordpess  </a></div>
+        <div id="Communication"></div>
+
+    </div>
+
+</div>
+<!------------------------foooooooooooooter--------------------------------------------------------------------------------->
+    </body>
+</html>
